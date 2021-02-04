@@ -12,8 +12,7 @@ class MemosController < ApplicationController
     def create
         #新しいメモがフォームからpostされたときに動作するアクション
         Memo.create(title:params["memos"]["title"],body:params["memos"]["body"])
-        redirect_to 
-        "/"
+        redirect_to "/"
     end    
     
     def delete
